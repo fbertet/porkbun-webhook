@@ -31,7 +31,6 @@ jobs:
       uses: redhat-actions/buildah-build@v2
       with:
         image: porkbun-webhook
-        platforms: ARM64
         archs: ARM64
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
