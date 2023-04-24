@@ -1,6 +1,6 @@
 ARG ARCH=arm64
 
-FROM ${ARCH}/docker.io/library/golang:1.17-alpine AS build_deps
+FROM golang:1.17-alpine AS build_deps
 
 RUN apk add --no-cache git
 
